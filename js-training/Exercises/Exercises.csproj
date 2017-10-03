@@ -76,6 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\Exercises\1\setup.js" />
+    <Content Include="Scripts\Setup\codeschool.exercise.js" />
+    <Content Include="Scripts\Setup\console.log.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

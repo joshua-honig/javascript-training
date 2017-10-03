@@ -75,8 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\Exercises\1\setup.js" />
-    <Content Include="Scripts\Exercises\counter-test-3.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-03.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-02.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-01.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-04.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-06.js" />
+    <Content Include="Scripts\Exercises\counter\counter-solution-05.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-03.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-02.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-01.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-04.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-06.js" />
+    <Content Include="Scripts\Exercises\shape\setup.js" />
+    <Content Include="Scripts\Exercises\counter\counter-test-05.js" />
     <Content Include="Scripts\Setup\codeschool.exercise.js" />
     <Content Include="Scripts\Setup\console.log.js" />
     <Content Include="Web.config" />

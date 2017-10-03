@@ -13,4 +13,4 @@
             assert.strictEqual(newVariables.length, 0, 'No new global variables');
         });
     });
-});
+})();

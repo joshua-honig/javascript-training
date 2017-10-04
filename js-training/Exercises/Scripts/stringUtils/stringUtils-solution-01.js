@@ -18,7 +18,7 @@
 //       stringUtils.pad('hello')            // throws Error
 //       stringUtils.pad('hello', 'foo')     // throws TypeError
 
-var stringUtils = window.stringUtils = (function () {
+window.stringUtils = (function () {
 
     function repeat(value, count) {
         var result = '';

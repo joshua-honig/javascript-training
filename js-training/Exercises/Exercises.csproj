@@ -104,7 +104,8 @@
     <Content Include="Scripts\Exercises\counter\counter-test-05.js" />
     <Content Include="Scripts\Setup\codeschool.exercise.js" />
     <Content Include="Scripts\Setup\console.log.js" />
-    <Content Include="Scripts\stringUtils\stringUtils-test-01-a.js" />
+    <Content Include="Scripts\stringUtils\stringUtils-solution-01.js" />
+    <Content Include="Scripts\stringUtils\stringUtils-test-01.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

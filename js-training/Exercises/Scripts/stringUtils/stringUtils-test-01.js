@@ -30,13 +30,16 @@
             assert.throws(function () { stringUtils.pad('foo', 'a', {}); }, 'stringUtils.pad throws error if pad char is not a string');
             assert.throws(function () { stringUtils.pad('foo', 'a', ''); }, 'stringUtils.pad throws error if pad char is an empty string');
 
+            assert.strictEqual(stringUtils.pad(null, 5), '     ', 'null value treated as empty string');
+            assert.strictEqual(stringUtils.pad(undefined, 5), '     ', 'undefined value treated as empty string');
             assert.strictEqual(stringUtils.pad('foo', 5), 'foo  ', 'Basic usage');
             assert.strictEqual(stringUtils.pad('foo', -5), '  foo', 'Basic usage, left aligned');
             assert.strictEqual(stringUtils.pad('foo', 2), 'foo', 'If width is less than length, input is returned');
             assert.strictEqual(stringUtils.pad('foo', 5, '_'), 'foo__', 'Custom pad char');
             assert.strictEqual(stringUtils.pad('foo', -5, '_'), '__foo', 'Custom pad char, left aligned');
             assert.strictEqual(stringUtils.pad('foo', 5, '_!='), 'foo__', 'Only first char of custom padding is used');
-            assert.strictEqual(stringUtils.pad(123, 5, '0'), '12300', 'value is converted to string');
+            assert.strictEqual(stringUtils.pad(123, 5, '0'), '12300', 'number value is converted to string');
+            assert.strictEqual(stringUtils.pad(window, 5), '[object Window]', 'object value is converted to string');
         });
     });
 })();

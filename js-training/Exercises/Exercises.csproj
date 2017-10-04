@@ -80,6 +80,8 @@
     <Content Include="Scripts\counter\counter-solution-03.js" />
     <Content Include="Scripts\counter\counter-solution-04.js" />
     <Content Include="Scripts\counter\counter-solution-05.js" />
+    <Content Include="Scripts\counter\counter-solution-07.js" />
+    <Content Include="Scripts\counter\counter-solution-08.js" />
     <Content Include="Scripts\counter\counter-solution-06.js" />
     <Content Include="Scripts\counter\counter-test-01.js" />
     <Content Include="Scripts\counter\counter-test-02.js" />
@@ -102,6 +104,7 @@
     <Content Include="Scripts\Exercises\counter\counter-test-05.js" />
     <Content Include="Scripts\Setup\codeschool.exercise.js" />
     <Content Include="Scripts\Setup\console.log.js" />
+    <Content Include="Scripts\stringUtils\stringUtils-test-01-a.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

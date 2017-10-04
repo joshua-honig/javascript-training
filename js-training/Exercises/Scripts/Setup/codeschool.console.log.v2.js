@@ -8,7 +8,12 @@
         return;
     }
 
-    var $console = $('#console');
+    var $console = $([]);
+
+    $(function () {
+        $console = $('#console');
+    });
+
     _consoleLines = [];
 
     function addLine(line, color) {

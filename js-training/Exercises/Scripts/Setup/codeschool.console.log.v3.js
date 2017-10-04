@@ -8,16 +8,31 @@
         return;
     }
 
-    var $console = $([]);
+    var console_handle = {
+        $console: $([]),
+        attached: false
+    };
 
     $(function () {
-        $console = $('#console');
+        console_handle.$console = $('#console');
+        console_handle.attached = true;
+
+        for (var i = 0; i < _pendingLines.length; i++) {
+            var info = _pendingLines[i];
+            addLine(info.text, info.color);
+        }
     });
 
+    _pendingLines = [];
     _consoleLines = [];
 
-    function addLine(line, color) {
+    function addLine(line, color, noPush) {
         _consoleLines.push(line);
+        if (!console_handle.attached) {
+            _pendingLines.push({ text: line, color: color });
+            return;
+        }
+
         var $line = $('<span></span>').text(line);
         if (color != null) {
             $line.css('color', color);
@@ -72,6 +87,6 @@
 
     cs.console = Object.create(console_proxy);
     cs.console.getLines = function () { return _consoleLines.concat(); };
-     
+
     window.console = console_proxy;
 })();

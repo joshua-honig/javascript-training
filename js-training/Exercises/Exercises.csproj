@@ -103,7 +103,7 @@
     <Content Include="Scripts\Exercises\shape\setup.js" />
     <Content Include="Scripts\Exercises\counter\counter-test-05.js" />
     <Content Include="Scripts\Setup\codeschool.exercise.js" />
-    <Content Include="Scripts\Setup\codeschool.console.log.v2.js" />
+    <Content Include="Scripts\Setup\codeschool.console.log.v3.js" />
     <Content Include="Scripts\stringUtils\stringUtils-solution-02.js" />
     <Content Include="Scripts\stringUtils\stringUtils-solution-01.js" />
     <Content Include="Scripts\stringUtils\stringUtils-test-02.js" />

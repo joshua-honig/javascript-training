@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\basic\basic-test-01.js" />
+    <Content Include="Scripts\basic\module.js" />
     <Content Include="Scripts\counter\counter-solution-01.js" />
     <Content Include="Scripts\counter\counter-solution-02.js" />
     <Content Include="Scripts\counter\counter-solution-03.js" />

@@ -6,6 +6,7 @@
         utils: {
             name: 'nifty utils',
             str: {
+                name: 'nifty string utils',
                 repeat: function (value, count) {
                     _repeatCalled++;
                     var result = '';
@@ -16,8 +17,10 @@
         }
     };
 
+    nifty_module.__str_repeat = nifty_module.utils.str.repeat;
+
     window.nifty = nifty_module;
-     
+
     codeschool.exercise.setTest('nifty.utils.str', function (QUnit) {
         var cs = window.codeschool;
         var nifty = window.nifty;
@@ -34,12 +37,12 @@
             assert.strictEqual(nifty.utils.str.name, 'nifty string utils', 'nifty.utils.str wasn\'t clobbered');
             assert.strictEqual(nifty.utils.str.repeat, nifty.__str_repeat, 'nifty.utils.str.repeat wasn\'t clobbered');
         });
-         
+
         QUnit.test('pad', function (assert) {
             var pad = nifty.utils.str.pad;
             _repeatCalled = 0;
 
-            assert.ok($.isFunction(pad), 'nifty.utils.str.pad is a function'); 
+            assert.ok($.isFunction(pad), 'nifty.utils.str.pad is a function');
 
             assert.throws(function () { pad('foo'); }, 'pad throws error if only 1 argument');
             assert.throws(function () { pad('foo', 'a'); }, 'pad throws error if length is NaN or not a number');
